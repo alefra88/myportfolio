@@ -84,9 +84,14 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 import dj_database_url
 from decouple import config
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddtr3qkuajb1vs',
+        'USER': 'pjswesqunbiqih',
+        'PASSWORD': 'f24edd07a4feaa3d150d46b94d08eae3d56d0f7663c238d5598b5dd3606b6698',
+        'HOST': 'ec2-3-231-82-226.compute-1.amazonaws.com',
+        'PORT': 5432,
+    }
 }
 
 # Password validation
