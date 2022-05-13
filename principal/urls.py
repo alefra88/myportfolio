@@ -6,4 +6,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.inicio, name="inicio"),
     path('trabajos/', views.trabajos, name="trabajos")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
